@@ -11,21 +11,25 @@ Se utilizó tanto R como Python en la realización del Modelo, para l explicaci�
 
 ## Test Phillips-Perron (Prueba de estacionariedad)
 <img width="679" height="201" alt="image" src="https://github.com/user-attachments/assets/6aa8d80d-1aa6-4666-a76a-2d755ea974af" />
+
 El p-value dió 0.2232, lo cuál según el TEST se rechaza la hipótesis nula de que el modelo NO ES ESTACIONARIO, por lo tanto, el modelo si es estacionario.
 
 ## Test Ljung-Box (Q-test)
 Este Test busca identificar autocorrelación serial entre los errores del modelo. Lo ideal es que los errores del modelo sean estacionarios o que se comporten como "ruido blanco", es decir, se comporten de forma aleatoria y no estén correlacionados.
 <img width="555" height="118" alt="image" src="https://github.com/user-attachments/assets/a00f6bc3-f8cd-452a-ac1c-68dac7ca1ff4" />
+
 El p-value fue menor a 0.05, por lo tanto no rechazamos la hipótesis nula que plantea que los errores NO ESTÁN CORRELACIONADOS.
 
 ## Test de Diebold-Mariano (DM)
 Este Test buca comparar nuestro modelo "óptimo" contra un modelo parsimonioso (más sencillo) como un AR(1) y comparar su capacidad de pronóstico.
 <img width="662" height="383" alt="image" src="https://github.com/user-attachments/assets/31583a59-3950-4193-8272-8d961891b62d" />
+
 Según los resultados del TEST cualquier de los dos modelos son igual de bueno para pronósticos.
 
 ## Test Mincer-zarnowits y Test Wald
 Ambos Test buscan verificar si nuestro modelo está estructuralmente sesgado, es decir, si nuestro modelo no está captando la información completa a partir de los datos reales para pronosticar en el futuro, lo cuál provocaría que nuestro pronostico esté sesgado. El test de wald apunta a que nuestro modelo está sesgado.
 <img width="577" height="361" alt="image" src="https://github.com/user-attachments/assets/2262c30d-73f9-4753-92be-726ecc7f9dc8" />
+
 La conclusión es que este modelo, está sistemáticamente sesgado, por lo cuál para fines científicos, no es un modelo recomendable, inclusi si pasó satisfactoriamente los otros TEST.
 
 # Resultados y conclusión
